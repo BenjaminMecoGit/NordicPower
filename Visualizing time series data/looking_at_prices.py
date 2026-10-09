@@ -41,21 +41,9 @@ plt.plot([i/scale for i in range(0,len(series_raw))], series_raw)
 for day in days:
 	plt.plot([N*(day - days[0])/scale for i in range(1,N)],[i * epsilon for i in range(1,N)], color = "red")
 
-
-#series_df = pd.DataFrame(series_raw)
-#series_df.plot()
-
 plt.show()
 
-'''
 
-
-with open("data.json", "w", encoding="utf-8") as file:
-	json.dump(data, file, indent=2, ensure_ascii=False)
-
-# Inspect the structure (show only the first 2,000 characters)
-print(json.dumps(data, indent=2, ensure_ascii=False)[:20000])
-'''
 
 
 
